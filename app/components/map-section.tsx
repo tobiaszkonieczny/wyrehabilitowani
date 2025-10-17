@@ -2,7 +2,7 @@ import { MapPin } from "lucide-react"
 
 export function MapSection() {
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-stone-50">
+    <section id="map" className="py-12 sm:py-16 lg:py-24 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 mb-4 sm:mb-6">
@@ -45,12 +45,12 @@ export function MapSection() {
             <div className="text-stone-700 text-xs sm:text-sm space-y-1">
               <p>
                 <a href="tel:+48123456789" className="hover:text-stone-900 transition-colors">
-                  Tel: +48 123 456 789
+                  Tel: +48 577 190 560
                 </a>
               </p>
               <p>
-                <a href="mailto:kontakt@wyrehabilitowani.pl" className="hover:text-stone-900 transition-colors break-all">
-                  kontakt@wyrehabilitowani.pl
+                <a href="mailto:wyrehabilitowani@gmail.com" className="hover:text-stone-900 transition-colors break-all">
+                  wyrehabilitowani@gmail.com
                 </a>
               </p>
             </div>

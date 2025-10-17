@@ -4,12 +4,29 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+  /* Aktualny font - Geist (nowoczesny, czytelny, używany przez Vercel) */
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+  /* Alternatywne opcje - odkomentuj i zamień powyższy jeśli chcesz spróbować: */
+  
+  /* Opcja 1: Satoshi - super nowoczesny, geometric sans-serif */
+  /* --font-sans: "Satoshi", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  
+  /* Opcja 2: Cal Sans - minimalistyczny, używany przez Cal.com */
+  /* --font-sans: "Cal Sans", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  
+  /* Opcja 3: Clash Display - bold, charakterystyczny dla headingów */
+  /* --font-sans: "Clash Display", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 }
 
 :root {
   /* Custom beige/stone color palette for shadcn components */
+  --accent-1: #9bb0a5;
+  --bg-primary: #f6efe7;
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
@@ -44,12 +61,15 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   background-color: white;
   color: rgb(28 25 23);
   font-feature-settings: "rlig" 1, "calt" 1;
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 * {
@@ -99,6 +119,8 @@ body {
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -131,6 +153,33 @@ body {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+.faded-background-image {
+    position: relative; 
+    overflow: hidden;
+    background-color: rgb(130, 115, 101);
+}
+
+.faded-background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    background-image: url('massage.png');
+    background-size: cover;
+    background-position: center;
+    
+    opacity: 0.15;
+    z-index: 0; 
+}
+
+.faded-background-image > * {
+    position: relative;
+    z-index: 10; 
 }
 
 @layer base {
