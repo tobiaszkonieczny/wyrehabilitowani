@@ -25,7 +25,7 @@ export function FirstVisitSection() {
   ]
 
   return (
-    <section id="first-visit" className="bg-[var(--bg-primary)] py-12 sm:py-16 lg:py-24">
+    <section id="first-visit" className="bg-[var(--bg-primary)] py-12 sm:py-16 lg:py-24 border-b border-stone-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">

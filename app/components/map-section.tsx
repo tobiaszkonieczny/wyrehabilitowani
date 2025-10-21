@@ -2,7 +2,7 @@ import { MapPin } from "lucide-react"
 
 export function MapSection() {
   return (
-    <section id="map" className="py-12 sm:py-16 lg:py-24 ">
+    <section id="contact" className="py-12 sm:py-16 lg:py-24 bg-[#f6efe7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 mb-4 sm:mb-6">
@@ -10,7 +10,7 @@ export function MapSection() {
           </h2>
           <div className="flex items-center justify-center text-stone-700 mb-6 sm:mb-8 px-4">
             <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mr-2 flex-shrink-0" />
-            <span className="text-sm sm:text-base text-center">ul. Przykładowa 123, 00-001 Warszawa</span>
+            <span className="text-sm sm:text-base text-center">ul. Tysiąclecia 25, 44-351 Turza Śląska</span>
           </div>
         </div>
 
@@ -18,7 +18,7 @@ export function MapSection() {
         <div className="bg-stone-200 rounded-lg overflow-hidden">
           <iframe
             title="Mapa Google"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.978028990071!2d19.94497981580091!3d50.064650979426774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b11f1b6d6c3%3A0x3a0e3b9cdd0d79f!2sKrak%C3%B3w!5e0!3m2!1spl!2spl!4v1712222222222!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.2493334649303!2d18.446554277645692!3d49.96918252189787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471150de732cf7cb%3A0x49f7ecf7664a5349!2zVHlzacSFY2xlY2lhIDI1LCA0NC0zNTEgVHVyemEgxZpsxIVza2E!5e0!3m2!1spl!2spl!4v1761083114455!5m2!1spl!2spl"
             width="100%"
             height="300"
             className="sm:h-96 lg:h-[400px]"
@@ -34,8 +34,8 @@ export function MapSection() {
           <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm border border-stone-200">
             <h3 className="font-semibold text-stone-900 mb-2 text-sm sm:text-base">Godziny otwarcia</h3>
             <div className="text-stone-700 text-xs sm:text-sm space-y-1">
-              <p>Pon - Pt: 8:00 - 20:00</p>
-              <p>Sobota: 9:00 - 15:00</p>
+              <p>Pon - Pt: 8:00 - 16:00</p>
+              <p>Sobota: zamknięte</p>
               <p>Niedziela: zamknięte</p>
             </div>
           </div>

@@ -42,7 +42,7 @@ export function PricingSection() {
               {/* Background decoration */}
               <div className="absolute top-0 right-0 w-16 h-16 bg-[#482e0c] opacity-5 rounded-full -mr-8 -mt-8"></div>
               
-              <div className="relative">
+              <div className="relative flex flex-col h-full justify-between">
                 <div className="flex items-center mb-4">
                   <CreditCard className="w-6 h-6 text-[#482e0c] mr-3" />
                   <span className="text-sm font-medium text-[#482e0c] uppercase tracking-wide">
@@ -58,10 +58,9 @@ export function PricingSection() {
                   {service.description}
                 </p>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between h-full">
                   <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
-                    <span className="text-sm text-stone-600">Sesja 60 min</span>
+                  
                   </div>
                   <div className="text-right">
                     <div className="text-3xl font-bold text-[#482e0c]">

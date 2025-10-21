@@ -5,6 +5,7 @@ export function ConditionsSection() {
   const conditions = [
     {
       category: "Fizjoterapia ortopedyczna",
+      icon: "bone.svg",
       items: [
         "Bóle kręgosłupa i stawów",
         "Przeciążenia mięśni i stawów", 
@@ -19,6 +20,7 @@ export function ConditionsSection() {
     },
     {
       category: "Fizjoterapia stomatologiczna",
+      icon: "tooth.svg",
       items: [
         "Migreny",
         "Napięciowe bóle głowy", 
@@ -30,8 +32,9 @@ export function ConditionsSection() {
     }
   ]
 
+
   return (
-    <section id="conditions" className="py-12 sm:py-16 lg:py-24 bg-[var(--bg-primary)]">
+    <section id="conditions" className="py-12 sm:py-16 lg:py-24 bg-[var(--bg-primary)] border-b border-stone-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 mb-4 sm:mb-6 px-2">
@@ -43,7 +46,8 @@ export function ConditionsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {conditions.map((condition, index) => (
             <div key={index} className="bg-white rounded-lg p-4 sm:p-6 border shadow-sm border-stone-200">
-              <h3 className="text-lg sm:text-xl font-semibold text-stone-900 mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl font-semibold text-stone-900 mb-3 sm:mb-4 flex flex-row gap-2">
+                  <img src={condition.icon}></img>
                 {condition.category}
               </h3>
               <ul className="space-y-1.5 sm:space-y-2">

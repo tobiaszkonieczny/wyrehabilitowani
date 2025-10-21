@@ -8,6 +8,7 @@ export function BookingSection() {
       title: "Sprawdź dostępne terminy",
       description: "Zobacz wolne terminy w naszym kalendarzu",
       action: "Sprawdź terminy",
+      href: "#",
       variant: "default" as const
     },
     {
@@ -15,6 +16,7 @@ export function BookingSection() {
       title: "Rezerwacje online",
       description: "Zarezerwuj wizytę online przez platformę Booksy",
       action: "Rezerwuj online",
+      href: "https://booksy.com",
       variant: "secondary" as const
     },
     {
@@ -22,6 +24,7 @@ export function BookingSection() {
       title: "Rezerwacja telefoniczna",
       description: "Zadzwoń i umów się na dogodny termin",
       action: "Zadzwoń",
+      href: "tel:+48577190560",
       variant: "secondary" as const
     },
     {
@@ -29,7 +32,8 @@ export function BookingSection() {
       title: "Masz pytania?",
       description: "Napisz do nas na email, chętnie odpowiemy",
       action: "Napisz email",
-      variant: "outline" as const
+      href: "mailto:wyrehabilitowani@gmail.com",
+      variant: "default" as const
     }
   ]
 
@@ -68,19 +72,25 @@ export function BookingSection() {
                     {option.description}
                   </p>
                   
-                  <Button 
-                    size="lg"
-                    variant={option.variant}
-                    className={`w-full sm:w-auto px-8 py-3 ${
-                      option.variant === 'default' 
-                        ? 'bg-[#482e0c] hover:bg-[var(--accent-1)] text-white'
-                        : option.variant === 'secondary'
-                        ? 'bg-[var(--accent-1)] hover:bg-[#482e0c] text-white'
-                        : 'border-[#482e0c] text-[#482e0c] hover:bg-[#482e0c] hover:text-white'
-                    }`}
+                  <a 
+                    href={option.href} 
+                    className="w-full sm:w-auto"
+                    target={option.href.startsWith('http') ? "_blank" : undefined}
+                    rel={option.href.startsWith('http') ? "noopener noreferrer" : undefined}
                   >
-                    {option.action}
-                  </Button>
+                    <Button 
+                      size="lg"
+                      className={`w-full px-8 py-3 ${
+                        option.variant === 'default' 
+                          ? 'bg-[#482e0c] hover:bg-[var(--accent-1)] text-white hover:text-black'
+                          : option.variant === 'secondary'
+                          ? 'bg-[var(--accent-1)] hover:bg-[#482e0c] text-black hover:text-white'
+                          : 'border-[#482e0c] text-[#482e0c] hover:bg-[#482e0c] hover:text-white'
+                      }`}
+                    >
+                      {option.action}
+                    </Button>
+                  </a>
                 </div>
               </div>
             )
@@ -90,19 +100,30 @@ export function BookingSection() {
         {/* Contact Info */}
         <div className="mt-8 sm:mt-12 text-center">
           <div className="bg-white p-6 lg:p-8 rounded-lg border border-stone-200 max-w-3xl mx-auto">
-            <h3 className="text-lg sm:text-xl font-semibold text-stone-900 mb-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-stone-900 mb-6">
               Kontakt bezpośredni
             </h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center text-stone-700">
-                <Phone className="w-5 h-5 mr-2 text-[#482e0c]" />
-                <span className="font-medium">+48 577 190 560</span>
-              </div>
-              <div className="hidden sm:block text-stone-400">|</div>
-              <div className="flex items-center text-stone-700">
-                <Mail className="w-5 h-5 mr-2 text-[#482e0c]" />
-                <span className="font-medium">wyrehabilitowani@gmail.com</span>
-              </div>
+              <a href="tel:+48577190560" className="flex-1 max-w-xs">
+                <Button 
+                  size="lg" 
+                  className="w-full bg-[#482e0c] hover:bg-[var(--accent-1)] text-white hover:text-black"
+                >
+                  <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  +48 577 190 560
+                </Button>
+              </a>
+              
+              <a href="mailto:wyrehabilitowani@gmail.com" className="flex-1 max-w-xs">
+                <Button 
+                  variant="outline"
+                  size="lg" 
+                  className="w-full border-[#482e0c] text-[#482e0c] hover:bg-[#482e0c] hover:text-white"
+                >
+                  <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  Napisz email
+                </Button>
+              </a>
             </div>
           </div>
         </div>

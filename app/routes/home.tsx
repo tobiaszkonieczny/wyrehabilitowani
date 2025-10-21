@@ -7,6 +7,7 @@ import { FirstVisitSection } from "~/components/first-visit-section";
 import { PreVisitInfoSection } from "~/components/pre-visit-info-section";
 import { PricingSection } from "~/components/pricing-section";
 import { BookingSection } from "~/components/booking-section";
+import { FAQSection } from "~/components/faq-section";
 import { MapSection } from "~/components/map-section";
 import { Footer } from "~/components/footer";
 
@@ -28,6 +29,7 @@ export default function Home() {
       <PreVisitInfoSection />
       <PricingSection />
       <BookingSection />
+      <FAQSection />
       <MapSection />
       <Footer />
     </div>
