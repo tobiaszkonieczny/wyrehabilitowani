@@ -154,7 +154,7 @@ export function Navbar() {
         <div
           id="mobile-nav"
           ref={mobileContainerRef}
-          className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out ${openNav ? 'mt-3 shadow-sm rounded-md border border-stone-200 bg-[#f6efe7]' : ''}`}
+          className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out ${openNav ? 'mt-3 rounded-md border border-stone-200 bg-[#f6efe7]' : ''}`}
           aria-hidden={!openNav}
         >
           {showMobileContent && (
