@@ -5,18 +5,13 @@ export function PricingSection() {
     {
       name: "Fizjoterapia stomatologiczna",
       price: "170 zł",
-      description: "Terapia problemów związanych z żuchwą, bruksizmem i bólami głowy"
+      description: "Terapia problemów związanych z żuchwą, bruksizmem i bólami głowy."
     },
     {
       name: "Fizjoterapia ortopedyczna", 
       price: "160 zł",
-      description: "Leczenie bólów kręgosłupa, stawów i problemów mięśniowo-szkieletowych"
+      description: "Leczenie bólów kręgosłupa, stawów i problemów mięśniowo-szkieletowych."
     },
-    {
-      name: "Masaż leczniczy",
-      price: "150 zł", 
-      description: "Profesjonalny masaż terapeutyczny dla regeneracji i relaksu"
-    }
   ]
 
   return (
@@ -33,7 +28,7 @@ export function PricingSection() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {services.map((service, index) => (
             <div 
               key={index}
@@ -84,7 +79,7 @@ export function PricingSection() {
               Formy płatności
             </h3>
             <p className="text-stone-700">
-              Przyjmujemy płatności gotówkowe oraz kartą płatniczą na miejscu
+              Przyjmujemy płatności gotówkowe oraz kartą płatniczą na miejscu.
             </p>
           </div>
         </div>

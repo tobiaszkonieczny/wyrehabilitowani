@@ -5,27 +5,27 @@ export function PreVisitInfoSection() {
     {
       icon: MessageSquare,
       title: "Przypomnienie o wizycie",
-      description: "Po zarezerwowaniu terminu dostaniesz SMSa przypominającego o wizycie"
+      description: "Po zarezerwowaniu terminu dostaniesz SMSa przypominającego o wizycie."
     },
     {
       icon: CreditCard,
       title: "Płatność",
-      description: "Zapłacić możesz na miejscu gotówką lub kartą"
+      description: "Zapłacić możesz na miejscu gotówką lub kartą."
     },
     {
       icon: Clock,
       title: "Rezerwacja na miejscu",
-      description: "W ośrodku dostaniesz ankietę zdrowotną do wypełnienia. Rezerwacje od 8:00 do 16:00, poniedziałek-piątek"
+      description: "W ośrodku dostaniesz ankietę zdrowotną do wypełnienia. Rezerwacje od 8:00 do 16:00, poniedziałek-piątek."
     },
     {
       icon: Globe,
       title: "Rezerwacja online",
-      description: "Dokument do wypełnienia elektronicznie na Booksy. Rezerwacje 24/7"
+      description: "Dokument do wypełnienia elektronicznie na Booksy. Rezerwacje 24/7."
     },
     {
       icon: Phone,
       title: "Rezerwacja telefoniczna",
-      description: "Zostaniesz poproszony o podanie informacji związanych z Twoim problemem zdrowotnym"
+      description: "Zostaniesz poproszony o podanie informacji związanych z Twoim problemem zdrowotnym."
     }
   ]
 
@@ -43,29 +43,31 @@ export function PreVisitInfoSection() {
         </div>
 
         {/* Info Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {infoCards.map((card, index) => {
-            const IconComponent = card.icon
-            return (
-              <div 
-                key={index}
-                className="bg-white p-6 lg:p-8 rounded-lg border border-stone-200 hover:shadow-lg transition-shadow h-full"
-              >
-                <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="w-12 h-12 bg-[#482e0c] rounded-lg flex items-center justify-center">
-                    <IconComponent className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-stone-900">
-                    {card.title}
-                  </h3>
-                  <p className="text-stone-700 leading-relaxed">
-                    {card.description}
-                  </p>
-                </div>
-              </div>
-            )
-          })}
+<div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+  {infoCards.map((card, index) => {
+    const IconComponent = card.icon
+    return (
+      <div 
+        key={index}
+        className="flex flex-col justify-between bg-white p-6 lg:p-8 rounded-lg border border-stone-200 hover:shadow-lg transition-shadow w-full sm:w-1/2 lg:w-1/3 max-w-sm"
+      >
+        <div className="flex flex-col items-center text-center space-y-4 flex-1">
+          <div className="w-12 h-12 bg-[#482e0c] rounded-lg flex items-center justify-center">
+            <IconComponent className="w-6 h-6 text-white" />
+          </div>
+          <h3 className="text-lg sm:text-xl font-semibold text-stone-900">
+            {card.title}
+          </h3>
+          <p className="text-stone-700 leading-relaxed">
+            {card.description}
+          </p>
         </div>
+      </div>
+    )
+  })}
+</div>
+
+
       </div>
     </section>
   )

@@ -11,7 +11,7 @@ export function Footer() {
           <div className="lg:max-w-md">
             <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">WYrehabilitowani</h3>
             <p className="text-stone-400 mb-4 text-sm sm:text-base leading-relaxed flex flex-col">
-              <span>WYleczeni z bólu. </span>
+              <span>WY leczeni z bólu. </span>
               <span>
                 MY stawiamy Was na nogi.
               </span>
@@ -20,7 +20,7 @@ export function Footer() {
             {/* Social Media */}
             <div className="flex space-x-4">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/people/WYrehabilitowani-Milena-Zarzeczna/61581875332927/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-stone-400 hover:text-white transition-colors"
@@ -29,7 +29,7 @@ export function Footer() {
                 <Facebook className="h-5 w-5 sm:h-6 sm:w-6" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://instagram.com/wyrehabilitowani" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-stone-400 hover:text-white transition-colors"
@@ -55,7 +55,7 @@ export function Footer() {
               <div className="flex items-center">
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5 mr-2 flex-shrink-0" />
                 <a href="tel:+48 577 190 560" className="hover:text-white transition-colors">
-                  +48 123 456 789
+                  +48 577 190 560
                 </a>
               </div>
               <div className="flex items-start">

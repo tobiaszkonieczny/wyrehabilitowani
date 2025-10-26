@@ -10,8 +10,7 @@ export function ConditionsSection() {
         "Bóle kręgosłupa i stawów",
         "Przeciążenia mięśni i stawów", 
         "Dyskopatia",
-        "Stany pooperacyjne w obrębie stawu kolanowego",
-        "Stany pooperacyjne w obrębie stawu biodrowego",
+        "Endoprotezoplastyka",
         "Choroba zwyrodnieniowa stawów",
         "Urazy w obrębie stawu kolanowego",
         "Urazy w obrębie stawu biodrowego", 
@@ -66,7 +65,7 @@ export function ConditionsSection() {
         <div className="text-center mt-8 sm:mt-12">
           <div className="bg-white rounded-lg p-6 sm:p-8 shadow-sm border border-stone-200 max-w-3xl mx-auto">
             <p className="text-base sm:text-lg text-stone-700 mb-4 sm:mb-6 leading-relaxed">
-              Problemu nie ma na liście? Bez problemu! Skontaktuj się z nami i dowiedz się jak możemy Ci pomóc
+              Problemu nie ma na liście? Bez problemu! Skontaktuj się z nami i dowiedz się jak możemy Ci pomóc.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <button onClick={() => scrollToSection("map")} className="hidden sm:flex items-center justify-center bg-[#482e0c] text-white hover:bg-[var(--accent-1)] hover:text-black px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors cursor-pointer">

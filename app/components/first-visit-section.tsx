@@ -5,27 +5,27 @@ export function FirstVisitSection() {
     {
       icon: FileText,
       title: "Dokładny wywiad",
-      description: "Poznamy Twoją historię zdrowia i obecne dolegliwości"
+      description: "Poznamy Twoją historię zdrowia i obecne dolegliwości."
     },
     {
       icon: Search,
       title: "Analiza dokumentacji medycznej",
-      description: "Przeanalizujemy posiadaną dokumentację (MRI, RTG, USG)"
+      description: "Przeanalizujemy posiadaną dokumentację (MRI, RTG, USG)."
     },
     {
       icon: Activity,
       title: "Badanie manualne i testy funkcjonalne",
-      description: "Zabierz ze sobą wygodny strój (koszulka i krótkie spodenki)"
+      description: "Zabierz ze sobą wygodny strój (koszulka i krótkie spodenki)."
     },
     {
       icon: Target,
       title: "Odpowiednio dobrana terapia",
-      description: "Określenie planu dalszego działania oraz wskazówki do autoterapii"
+      description: "Określenie planu dalszego działania oraz wskazówki do autoterapii."
     }
   ]
 
   return (
-    <section id="first-visit" className="bg-[var(--bg-primary)] py-12 sm:py-16 lg:py-24 border-b border-stone-300">
+    <section id="first-visit" className="bg-[var(--bg-primary)] py-12 sm:py-16 lg:py-24 border-b border-stone-300 faded-background-image-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">

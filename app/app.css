@@ -25,7 +25,7 @@
 
 :root {
   /* Custom beige/stone color palette for shadcn components */
-  --accent-1: #9bb0a5;
+  --accent-1: #336c53;
   --bg-primary: #f6efe7;
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
@@ -169,7 +169,7 @@ body {
     right: 0;
     bottom: 0;
   
-    background-image: url('massage.png');
+    background-image: url('/massage.jpg');
     background-size: cover;
     background-position: center;
     
@@ -181,6 +181,77 @@ body {
     position: relative;
     z-index: 10; 
 }
+
+.faded-background-image-2 {
+    position: relative; 
+    overflow: hidden;
+    background-color: rgb(130, 115, 101);
+}
+
+.faded-background-image-2::before {
+    content: "";
+    position: absolute;
+    top: -300px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    background-image: url('/person.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    opacity: 0.15;
+    z-index: 0; 
+}
+
+.faded-background-image-2 > * {
+    position: relative;
+    z-index: 10; 
+}
+
+/* Mobile-only hero faded background: applies image for < lg, removed at lg */
+.mobile-faded-hero {
+  position: relative;
+  overflow: hidden;
+}
+.mobile-faded-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/massage.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+@media (min-width: 1024px) { /* lg breakpoint */
+  .mobile-faded-hero::before {
+    content: none; /* remove overlay on desktop */
+  }
+}
+.mobile-faded-hero > * { position: relative; z-index: 10; }
+
+/* Desktop-only side block faded background: visible only on lg+ */
+.desktop-faded-block {
+  position: relative;
+  overflow: hidden;
+}
+.desktop-faded-block::before {
+  content: none;
+}
+@media (min-width: 1024px) {
+  .desktop-faded-block::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/massage.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+  }
+}
+.desktop-faded-block > * { position: relative; z-index: 10; }
 
 @layer base {
   * {

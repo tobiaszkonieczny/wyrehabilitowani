@@ -6,7 +6,7 @@ export function BookingSection() {
     {
       icon: Clock,
       title: "Sprawdź dostępne terminy",
-      description: "Zobacz wolne terminy w naszym kalendarzu",
+      description: "Zobacz wolne terminy w naszym kalendarzu.",
       action: "Sprawdź terminy",
       href: "#",
       variant: "default" as const
@@ -14,23 +14,23 @@ export function BookingSection() {
     {
       icon: Globe,
       title: "Rezerwacje online",
-      description: "Zarezerwuj wizytę online przez platformę Booksy",
+      description: "Zarezerwuj wizytę online przez platformę Booksy.",
       action: "Rezerwuj online",
       href: "https://booksy.com",
-      variant: "secondary" as const
+      variant: "default" as const
     },
     {
       icon: Phone,
       title: "Rezerwacja telefoniczna",
-      description: "Zadzwoń i umów się na dogodny termin",
+      description: "Zadzwoń i umów się na dogodny termin.",
       action: "Zadzwoń",
       href: "tel:+48577190560",
-      variant: "secondary" as const
+      variant: "default" as const
     },
     {
       icon: Mail,
       title: "Masz pytania?",
-      description: "Napisz do nas na email, chętnie odpowiemy",
+      description: "Napisz do nas na email, chętnie odpowiemy.",
       action: "Napisz email",
       href: "mailto:wyrehabilitowani@gmail.com",
       variant: "default" as const

@@ -4,15 +4,16 @@ import TextType from "./ui/text-type"
 
 export function Hero() {
   return (
-    <section id="hero" className="bg-[#f6efe7] flex flex-row items-center min-h-[60vh] lg:max-h-[80vh]
-    faded-background-image border-b border-stone-300"
+    <section
+      id="hero"
+      className="bg-[#6a5f51] flex flex-row items-center min-h-[60vh] lg:max-h-[80vh] border-b border-stone-300 mobile-faded-hero"
     >
       <div className="w-full">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 min-h-[60vh] lg:max-h-[80vh]">
+        <div className="flex flex-col lg:flex-row  min-h-[60vh] lg:max-h-[80vh]">
           {/* Left side - Content with white background on desktop */}
           <div className="w-full lg:w-9/12 lg:bg-[#f6efe7] p-6 lg:p-8 flex flex-col justify-center">
             {/* Logo and Title container */}
-            <div className="flex flex-col items-center lg:items-start mb-3 sm:mb-4">
+            <div className="flex flex-col items-center lg:items-start mb-3 sm:mb-4 ">
               {/* Logo - visible on all screens */}
               <img 
                 src="logo-right.svg" 
@@ -31,11 +32,11 @@ export function Hero() {
               </div>
             </div>
             {/* Slogan - responsive text sizing */}
-            <p className="text-lg font-semibold sm:text-xl md:text-2xl lg:text-4xl lg:text- text-[var(--accent-1)] mb-8 sm:mb-4 lg:mb-6 text-center lg:text-left">
+            <p className="text-lg font-semibold sm:text-xl md:text-2xl lg:text-4xl text-white  md:text-[#482e0c] mb-8 sm:mb-4 lg:mb-6 text-center lg:text-left">
               Milena Zarzeczna
             </p>
             <p className="lg:text-[#482e0c] text-white text-center lg:text-left">
-              WYleczeni z bólu.
+              WY leczeni z bólu.
             </p>
             <p className="sm:mb-4 mb-4 lg:mb-6 lg:text-[#482e0c] text-white text-center lg:text-left">
               MY stawiamy Was na nogi.
@@ -77,7 +78,7 @@ export function Hero() {
           </div>
 
           {/* Right side - Logo for desktop only */}
-          <div className="hidden lg:flex lg:w-1/2 lg:justify-center lg:items-center">
+          <div className="hidden lg:flex lg:w-1/2 lg:justify-center lg:items-center desktop-faded-block">
             <img 
               src="logo-right.svg" 
               alt="WYrehabilitowani Logo"

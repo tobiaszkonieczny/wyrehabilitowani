@@ -112,7 +112,7 @@ export function FAQSection() {
               Nie znalazłeś odpowiedzi na swoje pytanie?
             </h3>
             <p className="text-stone-600 mb-6">
-              Przejdź do sekcji kontakt, gdzie znajdziesz wszystkie sposoby na skontaktowanie się z nami
+              Przejdź do sekcji kontakt, gdzie znajdziesz wszystkie sposoby na skontaktowanie się z nami.
             </p>
             <button
               onClick={() => scrollToSection('contact')}

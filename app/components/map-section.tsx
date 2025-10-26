@@ -34,9 +34,14 @@ export function MapSection() {
           <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm border border-stone-200">
             <h3 className="font-semibold text-stone-900 mb-2 text-sm sm:text-base">Godziny otwarcia</h3>
             <div className="text-stone-700 text-xs sm:text-sm space-y-1">
-              <p>Pon - Pt: 8:00 - 16:00</p>
-              <p>Sobota: zamknięte</p>
+              <p>Poniedziałek: 10:00 - 18:00</p>
+              <p>Wtorek: 10:00 - 16:00</p>
+              <p>Środa: 10:00 - 16:00</p>
+              <p>Czwartek: 10:00 - 16:00</p>
+              <p>Piątek: 10:00 - 16:00</p>
+              <p>Sobota: 12:00 - 16:00*</p>
               <p>Niedziela: zamknięte</p>
+              <p className="text-stone-700 text-xs sm:text-sm space-y-1 mt-2 font-extralight">*Dotyczy dwóch sobót w miesiącu</p>
             </div>
           </div>
           
