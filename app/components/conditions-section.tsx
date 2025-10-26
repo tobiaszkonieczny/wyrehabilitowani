@@ -68,7 +68,7 @@ export function ConditionsSection() {
               Problemu nie ma na liście? Bez problemu! Skontaktuj się z nami i dowiedz się jak możemy Ci pomóc.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <button onClick={() => scrollToSection("map")} className="hidden sm:flex items-center justify-center bg-[#482e0c] text-white hover:bg-[var(--accent-1)] hover:text-black px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors cursor-pointer">
+                <button onClick={() => scrollToSection("contact")} className="hidden sm:flex items-center justify-center bg-[#482e0c] text-white hover:bg-[var(--accent-1)] hover:text-black px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors cursor-pointer">
                 Kontakt
               </button>             
             </div>
