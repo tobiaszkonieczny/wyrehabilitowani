@@ -43,21 +43,20 @@ export function Hero() {
             </p>
             {/* CTA Buttons - responsive layout */}
             <div className="flex flex-col gap-3 sm:gap-4 items-stretch">
-              <Button 
-                size="lg" 
+              <Button
+                asChild
+                size="lg"
                 className="bg-[#482e0c] hover:bg-[var(--accent-1)] text-white hover:text-black px-6 sm:px-8 py-3 text-sm sm:text-base w-full"
               >
-                <Calendar className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                Umów się
+                <a
+                  href="https://booksy.com/pl-pl/320171_wyrehabilitowani-milena-zarzeczna_fizjoterapia_12917_turza-slaska"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Calendar className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  Umów się
+                </a>
               </Button>
-              
-              {/* Mobile phone button */}
-              <a href="tel:+48577190560" className="block sm:hidden">
-                <Button size="lg" className="w-full bg-[#482e0c] hover:bg-[var(--accent-1)] text-white hover:text-black">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Zadzwoń
-                </Button>
-              </a>
 
               {/* Desktop phone display */}
               <div className="hidden sm:flex items-center justify-center bg-[#482e0c] text-white hover:bg-[var(--accent-1)] hover:text-black px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors cursor-pointer w-full">
@@ -65,14 +64,20 @@ export function Hero() {
                 +48 577 190 560
               </div>
               
-              <Button 
-                variant="ghost" 
+              <Button
+                asChild
                 size="lg"
                 className="bg-[#482e0c] hover:bg-[var(--accent-1)] text-white hover:text-black px-6 sm:px-8 py-3 text-sm sm:text-base w-full"
               >
-                <Clock className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                <span className="hidden sm:inline">Sprawdź dostępne terminy</span>
-                <span className="sm:hidden">Dostępne terminy</span>
+                <a
+                  href="https://booksy.com/pl-pl/320171_wyrehabilitowani-milena-zarzeczna_fizjoterapia_12917_turza-slaska"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Clock className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="hidden sm:inline">Sprawdź dostępne terminy</span>
+                  <span className="sm:hidden">Dostępne terminy</span>
+                </a>
               </Button>
             </div>
           </div>

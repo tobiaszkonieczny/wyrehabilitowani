@@ -8,7 +8,7 @@ export function BookingSection() {
       title: "Sprawdź dostępne terminy",
       description: "Zobacz wolne terminy w naszym kalendarzu.",
       action: "Sprawdź terminy",
-      href: "#",
+      href: "https://booksy.com/pl-pl/320171_wyrehabilitowani-milena-zarzeczna_fizjoterapia_12917_turza-slaska",
       variant: "default" as const
     },
     {
@@ -16,7 +16,7 @@ export function BookingSection() {
       title: "Rezerwacje online",
       description: "Zarezerwuj wizytę online przez platformę Booksy.",
       action: "Rezerwuj online",
-      href: "https://booksy.com",
+      href: "https://booksy.com/pl-pl/320171_wyrehabilitowani-milena-zarzeczna_fizjoterapia_12917_turza-slaska",
       variant: "default" as const
     },
     {
