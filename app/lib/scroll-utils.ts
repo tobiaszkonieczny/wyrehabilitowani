@@ -22,5 +22,6 @@ export const navigationItems = [
   { name: 'Cennik', id: 'pricing' },
   { name: 'Umów się', id: 'booking' },
   { name: 'FAQ', id: 'faq' },
+  { name: 'Regulamin', id: 'regulamin' },
   { name: 'Kontakt', id: 'contact' },
 ] as const;

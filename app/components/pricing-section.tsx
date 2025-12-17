@@ -9,8 +9,13 @@ export function PricingSection() {
     },
     {
       name: "Fizjoterapia ortopedyczna", 
-      price: "160 zł",
-      description: "Leczenie bólów kręgosłupa, stawów i problemów mięśniowo-szkieletowych."
+      price: "170 zł",
+      description: "Terapia bólów kręgosłupa, stawów i problemów mięśniowo-szkieletowych."
+    },
+    {
+      name: "Masaż leczniczy", 
+      price: "150 zł",
+      description: "Zmniejszenie dolegliwości bólowych oraz napięcia w obrębie pleców, kończyn dolnych i górnych."
     },
   ]
 
@@ -28,12 +33,14 @@ export function PricingSection() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
-          {services.map((service, index) => (
-            <div 
-              key={index}
-              className="bg-white p-6 lg:p-8 rounded-lg border border-stone-200 hover:shadow-lg transition-shadow relative overflow-hidden"
-            >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 ">
+          {services.map((service, index) => {
+            const isLastOdd = services.length % 2 === 1 && index === services.length - 1
+            return (
+              <div
+                key={index}
+                className={`bg-white p-6 lg:p-8 rounded-lg border border-stone-200 hover:shadow-lg transition-shadow relative overflow-hidden ${isLastOdd ? 'md:col-span-2 md:max-w-xl md:mx-auto' : ''}`}
+              >
               {/* Background decoration */}
               <div className="absolute top-0 right-0 w-16 h-16 bg-[#482e0c] opacity-5 rounded-full -mr-8 -mt-8"></div>
               
@@ -68,7 +75,8 @@ export function PricingSection() {
                 </div>
               </div>
             </div>
-          ))}
+            )
+          })}
         </div>
 
         {/* Payment Info */}

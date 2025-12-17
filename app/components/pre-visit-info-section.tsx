@@ -13,11 +13,6 @@ export function PreVisitInfoSection() {
       description: "Zapłacić możesz na miejscu gotówką lub kartą."
     },
     {
-      icon: Clock,
-      title: "Rezerwacja na miejscu",
-      description: "W ośrodku dostaniesz ankietę zdrowotną do wypełnienia. Rezerwacje od 8:00 do 16:00, poniedziałek-piątek."
-    },
-    {
       icon: Globe,
       title: "Rezerwacja online",
       description: "Dokument do wypełnienia elektronicznie na Booksy. Rezerwacje 24/7."

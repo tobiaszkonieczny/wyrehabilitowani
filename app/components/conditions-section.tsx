@@ -26,7 +26,18 @@ export function ConditionsSection() {
         "Bruksizm",
         "Zgrzytanie zębami",
         "Bóle żuchwy",
-        "Trzaskanie i blokowanie żuchwy"
+        "Trzaskanie i blokowanie żuchwy",
+        "Zawroty głowy"
+      ]
+    },
+    {
+      category: "Masaże lecznicze",
+      icon: "massage.svg",
+      items: [
+        "Bóle pleców",
+        "Stres i napięcie",
+        "Poprawa krążenia",
+        "Relaksacja mięśni"
       ]
     }
   ]
@@ -43,8 +54,17 @@ export function ConditionsSection() {
 
         {/* Responsive grid - single column on mobile, 2 on tablet, 3 on desktop */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
-          {conditions.map((condition, index) => (
-            <div key={index} className="bg-white rounded-lg p-4 sm:p-6 border shadow-sm border-stone-200">
+          {conditions.map((condition, index) => {
+            const isLastOdd = conditions.length % 2 === 1 && index === conditions.length - 1
+            return (
+            <div
+              key={index}
+              className={`bg-white rounded-lg p-4 sm:p-6 border shadow-sm border-stone-200 ${
+                isLastOdd
+                  ? 'sm:col-span-2 sm:mx-auto sm:w-[calc(50%-0.75rem)] lg:w-[calc(50%-1rem)]'
+                  : ''
+              }`}
+            >
               <h3 className="text-lg sm:text-xl font-semibold text-stone-900 mb-3 sm:mb-4 flex flex-row gap-2">
                   <img src={condition.icon}></img>
                 {condition.category}
@@ -58,7 +78,7 @@ export function ConditionsSection() {
                 ))}
               </ul>
             </div>
-          ))}
+          )})}
         </div>
 
         {/* Call to action - mobile responsive */}

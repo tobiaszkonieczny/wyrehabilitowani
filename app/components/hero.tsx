@@ -57,6 +57,16 @@ export function Hero() {
                   Umów się
                 </a>
               </Button>
+              <Button
+                asChild
+                size="lg"
+                className="sm:hidden bg-[#482e0c] hover:bg-[var(--accent-1)] text-white hover:text-black px-6 sm:px-8 py-3 text-sm sm:text-base w-full"
+              >
+                <a href="tel:+48577190560">
+                  <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  Zadzwoń
+                </a>
+              </Button>
 
               {/* Desktop phone display */}
               <div className="hidden sm:flex items-center justify-center bg-[#482e0c] text-white hover:bg-[var(--accent-1)] hover:text-black px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors cursor-pointer w-full">
@@ -91,7 +101,6 @@ export function Hero() {
             />
           </div>
         </div>
-        
       </div>
     </section>
   )
