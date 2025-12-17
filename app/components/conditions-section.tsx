@@ -34,10 +34,8 @@ export function ConditionsSection() {
       category: "Masaże lecznicze",
       icon: "massage.svg",
       items: [
-        "Bóle pleców",
-        "Stres i napięcie",
-        "Poprawa krążenia",
-        "Relaksacja mięśni"
+        "Zmniejszenie napięcia mięśniowego",
+        "Zwiększenie elastyczności tkanek",
       ]
     }
   ]
