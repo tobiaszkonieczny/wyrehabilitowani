@@ -1,4 +1,4 @@
-import { MessageSquare, CreditCard, Clock, Phone, Globe } from "lucide-react"
+import { MessageSquare, CreditCard, Clock, Phone, Globe, PersonStanding } from "lucide-react"
 
 export function PreVisitInfoSection() {
   const infoCards = [
@@ -21,6 +21,11 @@ export function PreVisitInfoSection() {
       icon: Phone,
       title: "Rezerwacja telefoniczna",
       description: "Zostaniesz poproszony o podanie informacji związanych z Twoim problemem zdrowotnym."
+    },
+    {
+      icon: PersonStanding,
+      title: "Pacjenci",
+      description: "Przyjmujemy wyłącznie osoby dorosłe."
     }
   ]
 

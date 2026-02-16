@@ -14,7 +14,7 @@ export function PricingSection() {
     },
     {
       name: "Masaż leczniczy", 
-      price: "150 zł",
+      price: "160 zł",
       description: "Zmniejszenie dolegliwości bólowych oraz napięcia w obrębie pleców, kończyn dolnych i górnych."
     },
   ]

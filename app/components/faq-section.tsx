@@ -12,7 +12,7 @@ export function FAQSection() {
     },
     {
       question: "Gdzie znajduje się nasz gabinet?",
-      answer: "Gabinet znajduje się w ośrodku zdrowia NZOZ LUPUS na pierwszym piętrze, przy ul. Tysiąclecia 25 w Turzy Śląskiej."
+      answer: "Gabinet znajduje się w ośrodku zdrowia NZOZ LUPUS na pierwszym piętrze, przy ul. Tysiąclecia 25 w Turzy Śląskiej. Ośrodek nie posiada windy."
     },
     {
       question: "Czy fizjoterapia boli?",
@@ -33,7 +33,12 @@ export function FAQSection() {
     {
       question: "Czy rehabilitacja jest na NFZ?",
       answer: "Nie, rehabilitacja nie jest świadczona w ramach usług NFZ."
-    }
+    },
+     {
+      question: "Czy zajmujemy się fizjoterapią dzieci?",
+      answer: "Nie, gabinet specjalizuje się w fizjoterapii osób dorosłych."
+    },
+
   ]
 
   const toggleItem = (index: number) => {

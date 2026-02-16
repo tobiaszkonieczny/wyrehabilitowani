@@ -6,8 +6,8 @@ export function RegulaminSection() {
   const [isExpanded, setIsExpanded] = useState(false)
 
   const healthServicesData = [
-    { service: "Masaż leczniczy – pleców", category: "MASAŻE LECZNICZE", price: "150 zł" },
-    { service: "Wizyta fizjoterapeutyczna (ortopedyczna)", category: "WIZYTY FIZJOTERAPEUTYCZNE", price: "160 zł" },
+    { service: "Masaż leczniczy – pleców", category: "MASAŻE LECZNICZE", price: "160 zł" },
+    { service: "Wizyta fizjoterapeutyczna (ortopedyczna)", category: "WIZYTY FIZJOTERAPEUTYCZNE", price: "170 zł" },
     { service: "Wizyta fizjoterapeutyczna (stomatologiczna)", category: "WIZYTY FIZJOTERAPEUTYCZNE", price: "170 zł" }
   ]
 
@@ -134,7 +134,7 @@ export function RegulaminSection() {
                           Masaż leczniczy – pleców
                         </td>
                         <td className="px-6 py-4 text-sm font-medium text-stone-900">
-                          150 zł
+                          160 zł
                         </td>
                       </tr>
                       <tr className="bg-stone-50">
@@ -147,7 +147,7 @@ export function RegulaminSection() {
                           Wizyta fizjoterapeutyczna (ortopedyczna)
                         </td>
                         <td className="px-6 py-4 text-sm font-medium text-stone-900">
-                          160 zł
+                          170 zł
                         </td>
                       </tr>
                       <tr>
