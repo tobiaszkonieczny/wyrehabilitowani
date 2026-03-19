@@ -17,6 +17,10 @@ export function PricingSection() {
       price: "160 zł",
       description: "Zmniejszenie dolegliwości bólowych oraz napięcia w obrębie pleców, kończyn dolnych i górnych."
     },
+     {
+      name: "Pierwsza wizyta diagnostyczno - terapeutyczna", 
+      price: "180 zł",
+    },
   ]
 
   return (

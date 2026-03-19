@@ -26,7 +26,6 @@ export function ConditionsSection() {
         "Bruksizm",
         "Zgrzytanie zębami",
         "Bóle żuchwy",
-        "Trzaskanie i blokowanie żuchwy",
         "Zawroty głowy"
       ]
     },
