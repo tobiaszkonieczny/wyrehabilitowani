@@ -5,6 +5,10 @@ export function ServicesSection() {
     "Terapia blizny",
     "Masaż leczniczy",
     "Kinesiotaping",
+    "Pinoterapia",
+    "Suche igłowanie",
+    "Medycyna manualna",
+    "Kinezyterapia",
   ]
   const icons = [
     "tooth.svg",
@@ -12,6 +16,10 @@ export function ServicesSection() {
     "scar.svg",
     "massage.svg",
     "taping.svg",
+    "pinotherapy.svg",
+    "dry-needling.svg",
+    "hand.svg",
+    "kinesitherapy.svg"
   ]
 
   return (
